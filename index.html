@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 30 Combinator Selectors element_element</title>
+  </head>
+  <body>
+    <!-- element element -> div p : chọn tất cả các thẻ con -->
+    <p>
+        <h1>Tiêu đề</h1>
+        <h2 class="demo">aaa</h2>
+        <h3 class="demo demo2">bbb</h3>
+        <h3 id="line4">ccc</h3>
+        <h3>ddd</h3>
+        <div>
+          <p>eee</p>
+        </div>
+        <div class="emme">
+          <p>fff</p>
+        </div>
+    </p>
+    <hr>
+    <!-- element > element -> div > u : Chọn con trực tiếp -->
+     <p>
+        <h1>Tiêu đề 2</h1>
+        <h2 class="emo">ggg</h2>
+        <h3 id="line5">Dòng thứ 1</h3>
+        <h3>Dòng thứ 2</h3>
+        <h3 class="emo emo2">Dòng thứ 3</h3>
+        <div>
+            <block>
+                <p>Không được chọn theo div > p </p>
+            </block>
+            <p>Được chọn theo div > p </p>
+        </div>
+     </p>
+  </body>
+</html>
